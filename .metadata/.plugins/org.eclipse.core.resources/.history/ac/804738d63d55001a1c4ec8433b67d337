@@ -1,0 +1,21 @@
+package text;
+
+public class test9 {
+	public static void main(String[] args) {
+		new Phone2().display();
+	}
+}
+
+class Phone{
+	public void display(){
+		System.out.println("这是一个父类方法");
+	}
+}
+
+class Phone2 extends Phone{
+	public void display(){
+		super.display();
+		System.out.println("这是一个子类方法");
+	}
+}
+

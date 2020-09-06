@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ujiuye.dao.CardDao">
+    <resultMap id="cardMap" type="card">
+        <id property="cid" column="cid"></id>
+        <result column="cnum" property="cnum"/>
+    </resultMap>
+    <select id="getCardByPid" resultMap="cardMap">
+        select *from  card where pid=#{0}
+    </select>
+</mapper>

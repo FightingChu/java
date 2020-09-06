@@ -1,0 +1,5 @@
+package ThreadTest;
+
+public class Muti_Thread {
+	Thread th = new Thread();
+}

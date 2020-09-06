@@ -1,0 +1,20 @@
+package text;
+
+public class test7 {
+
+	public static void main(String[] args) {
+		MM m = new MM();
+		m.show();
+		
+	}
+}
+class MM{
+	int a = 10;
+	static final int b = 20;
+	public void show(){
+		System.out.println("这是一个普通方法");
+	}
+	public static void show2(){
+		System.out.println("这是一个静态方法");
+	}
+}

@@ -1,0 +1,10 @@
+package test;
+
+public class Test {
+	public static void main(String[] args) {
+		String firstDay = null;
+		firstDay = GettingDate.getFirstDay0fMonth();
+		System.out.println(firstDay);
+		System.out.println();
+	}
+}

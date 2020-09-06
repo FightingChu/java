@@ -1,0 +1,17 @@
+package ThreadTest;
+
+import java.util.concurrent.Callable;
+
+import ThreadTest.InterfaceA.call_Back;
+
+public class Pool_Thread implements Callable<String>{
+	private int i;
+	private Timestamp tt;
+	call_Back callBack;
+	@Override
+	public String call() throws Exception {
+		
+		return null;
+	}
+	
+}

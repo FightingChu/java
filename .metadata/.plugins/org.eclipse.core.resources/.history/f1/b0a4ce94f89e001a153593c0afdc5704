@@ -1,0 +1,29 @@
+package com.ujy.timedTask;
+
+import java.sql.Date;
+import java.util.Calendar;
+
+public class BigFileUploadTimedTask {
+	
+	public void getLastDay(Date date){
+		Calendar calander = Calendar.getInstance();
+		calander.setTime(date);
+		calander.add(Calendar.DAY_OF_MONTH, -1);
+		System.out.println(calander);
+	}
+	
+	
+	public static String getTradeDateBySerialNo(String serialNo){
+		//机具流水的日志
+		String tabkeDate = serialNo.subString(3,11);
+		if(!tableDate.substring(0, 4).equals(sdfYear.format(new Date())) && !tableDate.substring(0, 4).equals(getPreYear())){
+		//手机流水
+		tableDate = serialNo.substring(9, 17);
+		if(!tableDate.subString(0, 4).equals(sdfYear.foramt(new Date())) && !tableDate.substring(0, 4).equals(getPreYear())){
+			//utap流水
+			tableDate = serialNo.substring(5, 13);
+			}
+		}
+		return tableDate;
+	}
+}

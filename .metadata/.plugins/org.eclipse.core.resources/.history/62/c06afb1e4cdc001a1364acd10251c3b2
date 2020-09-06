@@ -1,0 +1,13 @@
+package test;
+
+import java.io.BufferedReader;
+import java.io.File;
+
+import javax.swing.plaf.basic.BasicOptionPaneUI.ButtonActionListener;
+
+public class TimeCount {
+	public static void main(String[] args) {
+		File file = new File("C://Users//chusi//Desktop//∂œµ„ π”√.txt");
+		BufferedReader br = new BufferedReader();
+	}
+}

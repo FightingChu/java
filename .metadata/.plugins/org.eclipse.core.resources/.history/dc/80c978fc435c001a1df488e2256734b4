@@ -1,0 +1,5 @@
+package com.ujy.bean;
+
+public class PersonBean {
+
+}

@@ -1,0 +1,16 @@
+package HttpUtil;
+
+import java.io.BufferedReader;
+import java.io.PrintWriter;
+import java.net.URL;
+
+public class HttpUtil {
+	
+	public static String doPost(String url, String param){
+		PrintWriter out = null;
+		BufferedReader in = null;
+		String result = "";
+		URL readlUrl = new URL();
+	}
+	
+}

@@ -1,0 +1,35 @@
+package text2;
+
+public class test5 {
+public static void main(String[] args) {
+	Runn runn = new Runn();
+	Thread w = new Thread(runn);
+	Thread v = new Thread(runn);
+	w.setName("展示柜三");
+	v.setName("李四");
+	w.start();
+	v.start();
+}
+}
+
+class Runn implements Runnable{
+	double balance = 100;
+	Object obj = new Object();
+	@Override
+	public void run() {
+		if(balance > 0){
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			balance -= 1000;
+			System.out.println(Thread.currentThread().getName() + "余额是余额不足了" );
+		}else{
+			System.out.println(Thread.currentThread().getName() + "余额是" + balance);
+		}
+		
+	}
+	
+}

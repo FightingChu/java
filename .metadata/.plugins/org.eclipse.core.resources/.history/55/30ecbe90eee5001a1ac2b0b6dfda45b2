@@ -1,0 +1,7 @@
+package ThreadTest;
+
+public interface InterfaceA {
+	public calss call_Back{
+		public abstract void over(String status);
+	}
+}

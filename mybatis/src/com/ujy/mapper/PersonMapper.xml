@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ujy.dao.PersonDao">
+    <select id="getAll" resultMap="personMap" >
+       <!-- select * from person  p,card c where p.pid=c.pid;-->
+       select *from person
+    </select>
+    <resultMap id="personMap" type="person">
+        <id column="pid" property="pid"/>
+        <result property="pname" column="pname"/>
+        <result column="address" property="address"/>
+        <!--association一对一的关系  第一种-->
+        <!--<association property="card" javaType="card">
+            <id column="cid" property="cid"/>
+            <result column="cnum" property="cnum"/>
+        </association>-->
+       <!-- 第二种一对一-->
+       <!-- <association property="card" javaType="card" resultMap="com.ujiuye.dao.CardDao.cardMap"/>-->
+       <!-- 第三种一对一-->
+        <association property="card" column="pid" javaType="card" select="com.ujiuye.dao.CardDao.getCardByPid"/>
+    </resultMap>
+</mapper>

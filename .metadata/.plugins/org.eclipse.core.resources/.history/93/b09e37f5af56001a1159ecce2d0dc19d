@@ -1,0 +1,10 @@
+package text2;
+
+public class test2 {
+	public static void main(String[] args) {
+//		System.out.println(Integer.MAX_VALUE);
+		Integer it = Integer.parseInt("123");
+		System.out.println(it);
+		System.out.println(Integer.valueOf("123"));
+	}
+}

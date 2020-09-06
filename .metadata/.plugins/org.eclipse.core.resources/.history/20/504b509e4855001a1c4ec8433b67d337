@@ -1,0 +1,26 @@
+package text;
+
+import java.util.Scanner;
+
+public class test10 {
+	public static void main(String[] args) {
+		/*Scanner sc = new Scanner(System.in);
+		System.out.print("请输入你想递归的值：");
+		int score = sc.nextInt();
+		
+		int ret = 1;
+		for(int i = 1; i <= score;i++){
+			ret *= i;
+		}
+		System.out.println("答案是:"+ret);*/
+	}
+	
+	public int bqnl(int score){
+		if(score == 1){
+			System.out.println("到头了");
+		}else{
+			return score * bqnl(score);
+		}
+		return score;
+	}
+}

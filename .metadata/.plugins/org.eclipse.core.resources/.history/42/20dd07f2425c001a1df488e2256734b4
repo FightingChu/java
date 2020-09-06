@@ -1,0 +1,13 @@
+package Dao;
+
+import java.util.List;
+
+import Bean.PersonBean;
+
+public interface PersonDao {
+	/**
+	 * 查询所有用户
+	 * @return
+	 */
+	List<PersonBean> getAll();
+}

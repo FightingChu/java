@@ -1,0 +1,70 @@
+package Process;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+
+public class GettingDate {
+	public static void main(String[] args) {
+		getLastDayOfMonth();
+		}			
+//		获取本月的第一天
+		public static String getFirstDay0fMonth(){
+				Calendar calender = null;
+		        String firstDay = null;
+		        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+		        calender = Calendar.getInstance();
+		        calender.add(Calendar.MONTH, 0);
+		        calender.set(Calendar.DAY_OF_MONTH, 1);
+		        firstDay = format.format(calender.getTime());
+//		        System.out.println(firstDay);
+				return firstDay;
+		}
+//		获取本月的最后一天
+		public static String getLastDayOfMonth(){
+			Calendar calendar =  null;
+			String lastDay = null;
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+			calendar = calendar.getInstance();
+			calendar.add(Calendar.MONTH, 1);
+			calendar.set(Calendar.DAY_OF_MONTH, 0);
+			lastDay = sdf.format(calendar.getTime());
+			System.out.println(lastDay);
+			return lastDay;
+		}
+//		获取当前天数
+		public static int getDayOfCurrent(){
+			//获取当前年份，月份，日期
+			Calendar calender = null;
+			calender = calender.getInstance();
+			int year = calender.get(Calendar.YEAR);
+			int month = calender.get(Calendar.MONTH) +1;
+			int day = calender.get(Calendar.DATE);
+			int hour = calender.get(Calendar.HOUR_OF_DAY);
+			int minute = calender.get(Calendar.MINUTE);
+			int second = calender.get(Calendar.SECOND);
+			int dow = calender.get(Calendar.DAY_OF_WEEK)-1;
+				if(dow == 0){
+					dow = 7;
+				}
+	        int dayOfMoth = calender.get(Calendar.DAY_OF_MONTH);
+	        int dayOfYear = calender.get(Calendar.DAY_OF_YEAR);
+			return dayOfYear;
+		}
+//		获取两个时间点中的所有日期
+		public static List<String> getBetweenDate(String beginTime, String EndTime){
+			SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+			List<String> betweenList = new ArrayList<String>();
+			try {
+				Calendar startDay = Calendar.getInstance();
+				startDay.setTime(sf.parse(beginTime));
+				startDay.add(Calendar.DATE, -1);
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			return null;
+		}
+}

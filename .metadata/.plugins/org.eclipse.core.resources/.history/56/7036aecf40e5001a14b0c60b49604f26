@@ -1,0 +1,17 @@
+package emmm;
+
+import java.io.File;
+
+import Utils.Convert_String;
+
+public class Base64ToFile {
+	public static void main(String[] args) {
+		
+	}
+	public void toFile(){
+		String s = FileToBase64.toBase64();
+		String path = "C://Users//chusi//Desktop//lr.txt";
+		File file = new File(path);
+		file = Convert_String.base64ToFile(s, file);
+	}
+}

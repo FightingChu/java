@@ -1,0 +1,31 @@
+package Process;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+
+public class TestData {
+	public static void main(String[] args) {
+		getArrayList();
+	}
+	public static List<String> getArrayList(){
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("1");
+		list.add("2");
+		list.add("3");
+//		迭代器循环list中元素
+//		Iterator<String> it = list.iterator();
+//		while(it.hasNext()){
+//			System.out.println(it.next());
+//		}
+//		加强for，循环其中元素
+//		for (String string : list) {
+//			System.out.println(string);
+//		}
+		return list;
+	}
+	public static String getBeforeTime(){
+		return "";
+	}
+}

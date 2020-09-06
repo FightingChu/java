@@ -1,0 +1,37 @@
+package text;
+
+import java.math.BigInteger;
+import java.util.Random;
+import java.util.Scanner;
+
+public class test2 {
+ public static void main(String[] args) {
+/*	Scanner sc = new Scanner(System.in);
+	System.out.println("请输入你想输入的数值：");
+	int score = sc.nextInt();
+	System.out.println(score);
+	System.out.println("请输入你想输入的第二个值");
+	double clas = sc.nextDouble();
+	System.out.println(clas);
+	System.out.println("两个数值的和是:"+(clas+score)+",就是这个数");*/
+	
+	 
+/*	 Scanner sc = new Scanner(System.in);
+	 System.out.print("请输入指示:");
+	 int a = sc.nextInt();
+	 if(a == 1){
+		 System.out.println("绿灯");
+	 }else if(a == 2){
+		 System.out.println("黄灯");
+	 }else if(a == 3){
+		 System.out.println("红灯");
+	 }else{
+		 System.out.println("输入错误");
+	 }*/
+	 
+	 Random r = new Random();
+	 double value = r.nextDouble();
+	 System.out.println(value*100);
+   }
+ }
+

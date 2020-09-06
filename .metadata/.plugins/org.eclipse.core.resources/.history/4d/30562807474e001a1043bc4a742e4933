@@ -1,0 +1,11 @@
+package text;
+
+public class test {
+	public static void main(String[] args) {
+		//Á·Ï°
+		
+		System.out.print("hello  world");
+		int a = 10;
+		System.out.println(a);
+	}
+}

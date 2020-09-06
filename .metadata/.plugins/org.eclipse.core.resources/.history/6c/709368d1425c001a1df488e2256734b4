@@ -1,0 +1,9 @@
+package com.ujy;
+
+public class Snippet {
+	/**查询所有的人
+	     * @return
+	     */
+	    List<PersonBean> getAll();
+}
+

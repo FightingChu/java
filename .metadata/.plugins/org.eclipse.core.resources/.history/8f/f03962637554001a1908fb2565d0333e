@@ -1,0 +1,72 @@
+package text;
+
+import java.util.Arrays;
+
+public class test4 {
+	public static void main(String[] args) {
+		/*int [] arr1 = new int [5];
+		System.out.println(arr1[4]);*/
+		
+		/*int [] arr2 = {1,2,3,4,5,6};
+		for(int i = 0;i < arr2.length;i++){
+			System.out.println(arr2[i]);
+		}
+		System.out.println(Arrays.toString(arr2));*/
+		
+		/*int arr [] = {1,2,3,4,5,6,7};
+		System.out.println(Arrays.toString(arr));
+		int start = 0;
+		int end = arr.length-1;
+		
+		for(;start < end;start++,end--){
+			int temp = arr[start];
+			arr [start] = arr [end];
+			arr [end] = temp; 
+		}
+		for(int i = 0;i<arr.length;i++){
+			System.out.print(arr[i]+",");
+		}
+		System.out.println();
+		System.out.println(Arrays.toString(arr));*/
+		
+/*		int arr[] = {1, 2, 3, 4, 5, 6};
+		int key = 5;
+		for(int i = 0; i < arr.length; i++){
+			if(arr[i] == key){
+				System.out.println("´æÔÚÕâ¸ökey");
+				break;
+			}
+		}*/
+		
+		//ÆÕÍ¨ÅÅÐò
+		/*int arr[] = {1, 11, 12, 3, 4, 2};
+		for(int i = 0; i < arr.length; i++){
+			for(int j = i + 1; j<arr.length; j++){
+				if(arr[i] < arr[j]){
+					int temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(arr));*/
+		
+		//Ã°ÅÝÅÅÐò
+		int arr[] = {1, 11, 12, 3, 4, 2, 15};
+		System.out.println(Arrays.toString(arr));
+		for(int i = 0; i < arr.length; i++){
+			for(int j = i; j <= arr.length; j++){
+				if(arr[j] > arr[j+1]){
+					int temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(arr));
+	}
+}
+
+
+
+

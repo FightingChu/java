@@ -1,0 +1,10 @@
+package ThreadTest;
+
+import java.util.concurrent.ThreadPoolExecutor;
+
+public class MainProcess {
+	public static void main(String[] args) {
+		ThreadPoolExecutor tpe = new ThreadPoolExecutor(3, 0, 0, null, null);
+				
+	}
+}

@@ -1,0 +1,12 @@
+package Dao;
+
+import Bean.CardBean;
+
+public interface CardDao {
+	/**
+	 * 根据外键查找用户
+	 * @param pid
+	 * @return
+	 */
+	CardBean getCardById(int pid);
+}

@@ -1,0 +1,15 @@
+package test;
+
+import java.io.BufferedReader;
+import java.io.File;
+
+import javax.swing.plaf.basic.BasicOptionPaneUI.ButtonActionListener;
+
+public class TimeCount {
+	public static void main(String[] args) {
+		String firstLine = "";
+		String lastLine = "";
+		File file = new File("C://Users//chusi//Desktop//断点使用.txt");
+		BufferedReader br = new BufferedReader("C://Users//chusi//Desktop//断点使用.txt");
+	}
+}

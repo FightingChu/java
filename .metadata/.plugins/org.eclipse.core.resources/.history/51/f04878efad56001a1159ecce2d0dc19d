@@ -1,0 +1,32 @@
+package text2;
+
+import java.util.Arrays;
+
+public class test1 {
+	public static void main(String[] args) {
+/*		String s = "123";
+		String d = "456";
+		System.out.println(s.isEmpty());
+		System.out.println(s.charAt(2));
+		System.out.println(s.compareTo(d));*/
+		
+/*		String s = " 1 2 3 4 ";
+		System.out.println(s);
+		System.out.println(s.trim());
+		System.out.println(Arrays.toString(s.split(",")));*/
+		
+//		System.out.println("123".concat("456"));
+//		System.out.println("abc".compareToIgnoreCase("Abc"));
+		
+		String s="asdfsdfrewdsdfsdsfq";
+/*		int index = s.indexOf("s");
+		System.out.println(index);*/
+		int index = -1;
+		while((index = s.indexOf("s", index+1))!= -1){
+			System.out.println(index);
+		}
+	}
+}
+
+
+

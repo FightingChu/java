@@ -1,0 +1,5 @@
+package com.ujy.dao;
+
+public interface CardDao {
+
+}

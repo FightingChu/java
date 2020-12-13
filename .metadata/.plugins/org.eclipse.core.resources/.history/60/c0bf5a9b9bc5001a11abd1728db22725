@@ -1,0 +1,20 @@
+package cn.com;
+
+import java.util.ArrayList;
+
+public class test {
+	public static void main(String[] args) {
+		int count = 0;
+		String s1 = "111";
+		String s2 = "222";
+		String s3 = "333";
+		if(s1 =="111"){
+			count = count + 1;
+			System.out.println(count);
+		}else{
+			count = count + 0;
+			System.out.println(count);
+		}
+	}
+
+}

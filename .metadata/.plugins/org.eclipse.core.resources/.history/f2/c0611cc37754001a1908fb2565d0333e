@@ -1,0 +1,50 @@
+package text;
+
+public class test5 {
+	public static void main(String[] args) {
+		Student p = new  Student();
+		p.age = "18";
+		p.name = "ÕÅÈý";
+		p.sex = "ÄÐ";
+		System.out.println(p.sex);
+	}
+}
+
+	class Student{
+		String age;
+		String name;
+		String sex;
+		public String getAge() {
+			return age;
+		}
+		public void setAge(String age) {
+			this.age = age;
+		}
+		public String getName() {
+			return name;
+		}
+		public void setName(String name) {
+			this.name = name;
+		}
+		public String getSex() {
+			return sex;
+		}
+		public void setSex(String sex) {
+			this.sex = sex;
+		}
+		@Override
+		public String toString() {
+			return "Student [age=" + age + ", name=" + name + ", sex=" + sex + "]";
+		}
+		public Student(String age, String name, String sex) {
+			super();
+			this.age = age;
+			this.name = name;
+			this.sex = sex;
+		}
+		public Student() {
+			super();
+			// TODO Auto-generated constructor stub
+		}
+		
+	}

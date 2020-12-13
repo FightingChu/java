@@ -1,0 +1,11 @@
+package ThreadTest;
+
+import java.util.Date;
+import java.util.concurrent.ThreadPoolExecutor;
+
+public class MainProcess {
+	public static void main(String[] args) {
+		Date date = new Date();
+		System.out.println(date.getDate());
+	}
+}

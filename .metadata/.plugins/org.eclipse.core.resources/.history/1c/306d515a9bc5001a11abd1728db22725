@@ -1,0 +1,13 @@
+package cn.com;
+
+import java.util.ArrayList;
+
+public class test {
+	public static void main(String[] args) {
+		int i =5;
+		int j =5;
+		int m = i + j;
+		System.out.println(m);
+	}
+
+}

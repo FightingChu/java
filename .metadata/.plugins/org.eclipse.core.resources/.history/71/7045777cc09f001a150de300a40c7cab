@@ -1,0 +1,65 @@
+package com.ujy.timedTask;
+
+import java.io.File;
+import java.sql.Date;
+import java.util.Calendar;
+import java.util.Map;
+
+import org.apache.log4j.chainsaw.Main;
+import org.springframework.util.CollectionUtils;
+
+public class BigFileUploadTimedTask {
+	public static void main(String[] args) {
+	public void getLastDay(Date date){
+		Calendar calander = Calendar.getInstance();
+		calander.setTime(date);
+		calander.add(Calendar.DAY_OF_MONTH, -1);
+		System.out.println(calander);
+	}
+	
+	
+	public static String getTradeDateBySerialNo(String serialNo){
+		//机具流水的日志
+		String tabkeDate = serialNo.subString(3,11);
+		if(!tableDate.substring(0, 4).equals(sdfYear.format(new Date())) && !tableDate.substring(0, 4).equals(getPreYear())){
+		//手机流水
+		tableDate = serialNo.substring(9, 17);
+		if(!tableDate.subString(0, 4).equals(sdfYear.foramt(new Date())) && !tableDate.substring(0, 4).equals(getPreYear())){
+			//utap流水
+			tableDate = serialNo.substring(5, 13);
+			}
+		}
+		return tableDate;
+		
+		
+		public boolean deleteDownloadFiles(Map<String, Object> paramMap) {
+			boolean flag = false;
+			try {
+				logger.info("===============进入删除下载文件接口");
+				List<WBankDoubleDownloadRecord> list = uploadToImageSystemMapper.queryRecordForDownloadFile(paramMap);
+				if(!CollectionUtils.isEmpty(list)){
+					for(WBankDoubleDownloadRecord wBankDoubleDownloadRecord : list) {
+						String fileName = downLoadFilePath + wBankDoubleloadRecord.getFile();
+						File file = new File(fileName);
+						if(file.exists()) {
+							file.delete();
+							logger.info("该文件已经删除，文件名："+fileName);
+						} else {
+							file = new File(serverPath + wBankDoubleDownloadRecord.getFileName());
+							if(file.exists()){
+								file.delete();
+								logger.info("该文件已经不存在或者删除，文件名是" + fileName);
+							}
+						}
+					}
+				}
+				logger.info("文件删除已经执行完毕" + fileName);
+				flag = true;
+			} catch (Exception e) {
+				logger.info("删除的文件出现异常，异常信息为" + e);
+			}
+			return flag;
+		}
+	  }
+    }
+}

@@ -1,0 +1,29 @@
+package text;
+
+import java.util.Scanner;
+
+public class test10 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("请输入你想递归的值：");
+		int score = sc.nextInt();
+		System.out.println("递归的结果是" + get(score));
+		
+		/*int ret = 1;
+		for(int i = 1; i <= score; i++){
+			ret *= i;
+		}
+		System.out.println("递归的结果是：" + ret);*/
+	}
+	public static int get(int score){
+		if(score == 1){
+			System.out.println("递归的值已经是1，结束。");
+		}else{
+		    return score *= (score - 1);
+		}
+		return score;
+	}
+}
+
+
+

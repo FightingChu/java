@@ -1,0 +1,22 @@
+package HttpUtil;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+
+public class HttpUtil {
+	
+	public static String doPost(String url, String param){
+		PrintWriter out = null;
+		BufferedReader in = null;
+		String result = "";
+			URL readlUrl = new URL(url);
+//			打开和url之间的连接
+			URLConnection connection;
+			connection = readlUrl.openConnection();
+			connection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+	}
+}

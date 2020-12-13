@@ -1,0 +1,63 @@
+package text2;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
+public class test3 {
+	public static void main(String[] args) {
+		//创建集合并添加对象
+		 ArrayList arr = new ArrayList();
+		arr.add(new Student("张三","女","18"));
+		arr.add(new Student("张三","女","19"));
+		arr.add(new Student("张三","女","20"));
+		//创建迭代器，并进行遍历
+		Iterator<Student> it = arr.iterator();
+		while(it.hasNext()){
+			Student student = it.next();
+			if(student.getName().startsWith("张")){
+				it.remove();
+			}
+		}
+		System.out.println(cl);
+	}
+}
+
+class Student{
+	private String name;
+	private String sex;
+	private String age;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getSex() {
+		return sex;
+	}
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+	public String getAge() {
+		return age;
+	}
+	public void setAge(String age) {
+		this.age = age;
+	}
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", sex=" + sex + ", age=" + age + "]";
+	}
+	public Student(String name, String sex, String age) {
+		super();
+		this.name = name;
+		this.sex = sex;
+		this.age = age;
+	}
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+}

@@ -1,0 +1,12 @@
+package ThreadTest;
+
+import java.util.Date;
+import java.util.Random;
+
+public class Timestamp {
+	public static void main(String[] args) {
+		Random s = new Random(1000);
+		String timeStamp = String.valueOf(new Date().getTime()) + ;
+		System.out.println(timeStamp);
+	}
+}

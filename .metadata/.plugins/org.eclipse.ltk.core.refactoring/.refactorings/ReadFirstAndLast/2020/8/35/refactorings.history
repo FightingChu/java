@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;test.TimeCount&apos; to &apos;ReadFile&apos;&#x0D;&#x0A;- Original project: &apos;ReadOrWrite&apos;&#x0D;&#x0A;- Original element: &apos;test.TimeCount&apos;&#x0D;&#x0A;- Renamed element: &apos;test.ReadFile&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TimeCount&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;test{TimeCount.java[TimeCount" matchStrategy="1" name="ReadFile" qualified="false" references="true" similarDeclarations="false" stamp="1598187286571" textual="false" version="1.0"/>
+</session>

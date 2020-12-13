@@ -1,0 +1,20 @@
+package ThreadTest;
+
+import java.util.concurrent.Callable;
+import java.util.concurrent.CountDownLatch;
+
+import ThreadTest.InterfaceA.call_Back;
+
+public class Pool_Thread implements Callable<String>{
+	private int i;
+	private Timestamp tt;
+	call_Back callBack;
+	CountDownLatch cdl;
+	
+	@Override
+	public String call() throws Exception {
+		
+		return null;
+	}
+	
+}

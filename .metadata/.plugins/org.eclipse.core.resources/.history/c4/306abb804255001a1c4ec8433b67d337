@@ -1,0 +1,8 @@
+package text;
+
+public class test10 {
+	final static int BLOOD = 10;
+	public static void main(String[] args) {
+		System.out.println(BLOOD);
+	}
+}

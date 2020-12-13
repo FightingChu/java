@@ -1,0 +1,22 @@
+package com.ujy.timedTask;
+
+import java.sql.Date;
+import java.util.Calendar;
+
+public class BigFileUploadTimedTask {
+	
+	public void getLastDay(Date date){
+		Calendar calander = Calendar.getInstance();
+		calander.setTime(date);
+		calander.add(Calendar.DAY_OF_MONTH, -1);
+		System.out.println(calander);
+	}
+	
+	
+	public static Stirng getTradeDateBySerialNo(Stirng serialNo){
+		String tabkeDate = serialNo.subString(3,11);
+		if(!tableDate.substring(0,4).equals(sdfYear.format(new Date() && !tavleDate.substring(0,4).equals(getPreYear)))){
+			
+		}
+	}
+}

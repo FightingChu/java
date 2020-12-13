@@ -1,0 +1,7 @@
+package emmm;
+
+public class Pool_Thread {
+	public static void main(String[] args) {
+		pass;
+	}
+}

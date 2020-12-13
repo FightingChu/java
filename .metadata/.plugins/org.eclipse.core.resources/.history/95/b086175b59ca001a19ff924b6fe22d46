@@ -1,0 +1,16 @@
+package cn.com;
+
+import java.util.Date;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class test {
+	public static void main(String[] args) {
+	long d = new Date().getTime();
+//	System.out.println(d);
+	String s = Long.toString( d);
+	System.out.println(s);
+//	System.out.println(new Date().getTime());
+	}
+}

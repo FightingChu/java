@@ -1,0 +1,14 @@
+package text;
+
+public class test {
+	public static void main(String[] args) {
+		//Á·Ï°
+		
+//		System.out.println("hello  world");
+//		int a = 10;
+//		System.out.println(a);
+		final int BLOOD = 100;
+		System.out.println(BLOOD);
+		
+	}
+}

@@ -1,0 +1,12 @@
+package text;
+
+import java.util.Arrays;
+
+public class test8 {
+	public static void main(String[] args) {
+		int arr[] = {1, 2, 3, 4, 5, 6};
+		int key = 3;
+		int index = Arrays.binarySearch(arr, key);
+		System.out.println(index);
+	}
+}

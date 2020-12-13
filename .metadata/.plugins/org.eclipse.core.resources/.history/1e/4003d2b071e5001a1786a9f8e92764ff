@@ -1,0 +1,10 @@
+package ThreadTest;
+
+import java.util.Date;
+
+public class Timestamp {
+	public static void main(String[] args) {
+		String timeStamp = new Date().getTime();
+		System.out.println();
+	}
+}

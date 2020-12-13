@@ -1,0 +1,42 @@
+package text;
+
+public class test {
+	public static void main(String[] args) {
+		//练习
+		
+//		System.out.println("hello  world");
+/*		int a = 10;
+		System.out.println(a);*/
+		
+		//常量问题需要注意
+		/*final int BLOOD = 100;
+		System.out.println(BLOOD);*/
+		
+		//精度问题要注意
+/*		double f = 3.14;
+		float a = 3.1f;
+		double b = 3.14;
+		float c = 3.1f;
+		System.out.println(f);
+		System.out.println(a);
+		System.out.println(a+f);
+		System.out.println(a+b);
+		System.out.println(a+c);*/
+		
+		//char类型   可表示中文可表示中文，可表示字母，所以一般不用。
+/*		char c = 97;
+		System.out.println(c);
+		char m = '张';
+		System.out.println(m);*/
+		
+		double a = 1.12;
+		a++;
+		System.out.println(a);
+
+		
+	}
+}
+
+
+
+

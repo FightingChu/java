@@ -1,0 +1,22 @@
+package text2;
+
+import java.util.Scanner;
+
+public class test2 {
+	public static void main(String[] args) {
+//		System.out.println(Integer.MAX_VALUE);
+/*		Integer it = Integer.parseInt("123");
+		System.out.println(it);
+		System.out.println(Integer.valueOf("123"));*/
+		
+		Scanner sc  = new Scanner(System.in);
+		System.out.println("请输入你的姓名编号：");
+		String score = sc.next();
+		boolean flag = score.matches("^[0-9a-zA-Z]{8,12}$");
+		if(flag == true){
+			System.out.println("keyikeyi");
+		}else{
+			System.out.println("这是错误的");
+		}
+	}
+}
